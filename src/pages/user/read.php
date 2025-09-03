@@ -23,9 +23,9 @@
             </tr>
     <?php foreach ($users as $row): ?>
         <tr>
-        <td class="user-name"><?=htmlspeecialchars($row['name'])?></td>
-        <td class="user-name"><?=htmlspeecialchars($row['email'])?></td>
-        <td class="user-name"><?=htmlspeecialchars($row['fone'])?></td>
+        <td class="user-name"><?=htmlspecialchars($row['name'])?></td>
+        <td class="user-name"><?=htmlspecialchars($row['email'])?></td>
+        <td class="user-name"><?=htmlspecialchars($row['fone'])?></td>
 
         <a classes="btn btn-primary text-white" href="./edit.php?id=<?=$row['id']?>">Editar</a>
         </td>
